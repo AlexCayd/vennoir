@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vennoir</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__superior">
+            <div class="header__superior-contenedor">
+                <img src="img/logo.png" alt="Logo" class="header__logo">
+    
+                <div class="header__iconos">
+                    <div class="header__icono">
+                        <div class="header__iconocontenedor">
+                            <i class="fas fa-cart-plus"></i>
+                        </div>
+                        <h3 class="header__iconotitulo">Carrito</h3>
+                    </div>
+    
+                    <div class="header__icono">
+                        <div class="header__iconocontenedor">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3 class="header__iconotitulo">Mi Perfil</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__inferior">
+            <nav class="navegacion contenedor">
+                <a href="#" class="navegacion__enlace">Inicio</a>
+                <a href="#" class="navegacion__enlace">Tienda</a>
+                <a href="#" class="navegacion__enlace">Ofertas</a>
+                <a href="#" class="navegacion__enlace">Tendencias</a>
+                <a href="#" class="navegacion__enlace">Sucursales</a>
+                <a href="#" class="navegacion__enlace">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tienda__grid">
+        <aside class="lateral">
+            <h2 class="lateral__titulo"> <i class="fas fa-plus"></i> Todas las Categorías</h2>
+            <nav class="lateral__categorias">
+                <a href="#" class="categoria">Playeras</a>
+                <a href="#" class="categoria">Hoodies</a>
+                <a href="#" class="categoria">Hombre</a>
+                <a href="#" class="categoria">Mujer</a>
+                <a href="#" class="categoria">Accesorios</a>
+                <a href="#" class="categoria">Más</a>
+            </nav>
+
+            <div class="populares">
+                <h3 class="lateral__titulo">Hoodies Populares</h3>
+                <div id="container"></div>
+                <div class="populares__paginacion">
+                    <div id="pagination" class="populares__pagination"></div>
+                </div>
+            </div>
+
+            <div class="testimoniales">
+                <h3 class="lateral__titulo">Testimoniales</h3>
+                <div class="testimoniales__contenedor">
+                    <div class="testimoniales__usuario">
+                        <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Usuario" class="testimoniales__imagen">
+                        <h4 class="testimoniales__username">Sarah Connor</h4>
+                    </div>
+                    <div class="testimoniales__progreso"></div>
+                    <div class="fas fa-quote-right fa-quote"></div>
+                    <div class="fas fa-quote-left fa-quote"></div>
+                    <p class="testimoniales__texto">La mejor tienda de ropa en la que he comprado en mucho tiempo</p>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h3 class="lateral__titulo">Newsletter</h3>
+                <div class="newsletter__container">
+                    <i class="fas fa-at newsletter__icono newsletter__icono-1"></i>
+                    <i class="fas fa-envelope newsletter__icono newsletter__icono-2"></i>
+                    <i class="fas fa-inbox newsletter__icono newsletter__icono-3"></i>
+                    <i class="fas fa-receipt newsletter__icono newsletter__icono-4"></i>
+                    <i class="fas fa-tag newsletter__icono newsletter__icono-5"></i>
+                    <i class="fas fa-reply newsletter__icono newsletter__icono-6"></i>
+                    <div class="newsletter__contenedor">
+                        <h4 class="newsletter__titulo">Coloca tu correo para recibir todas las nuevas ofertas</h4>
+                        <form class="newsletter__form">
+                            <input type="email" class="newsletter__input" required>
+                            <input type="submit" value="Inscribirme" class="newsletter__submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Vennoir" class="logo__img">
+            </div>
+        </aside>
+
+
+
+        <section class="principal">
+            <div class="principal__buscador">
+                <form method="POST" class="principal__formulario">
+                    <div class="principal__formulario-campos">
+                        <input type="text" placeholder="Busca un item..." class="principal__input">
+                        <input type="submit" value="Buscar" class="principal__submit">
+                    </div>
+                </form>
+                <a href="#" class="principal__whatsapp">
+                    <i class="fas fa-phone"></i>
+                    <h3 class="principal__whatsapp-titulo">Pide en Whatsapp</h3>
+                    <h4 class="principal__whatsapp-descripcion">-55-4892-9810-</h4>
+                </a>
+            </div>
+
+            <div class="slider">
+                <div class="slider__contenido">
+                    <h2 class="slider__texto">Vennoir</h2>
+                </div>
+                <div class="container">
+                    <img src="img/hero.jpg" alt="Imagen">
+                    <img src="img/hero3.jpg" alt="Imagen">
+                    <img src="img/hero2.jpg" alt="Imagen">
+                </div>
+        
+                <div class="controls">
+                    <ul></ul>
+                </div>
+            </div>
+
+            <div class="ventajas">
+                <div class="ventaja">
+                    <h2 class="ventaja__titulo"> <i class="fas fa-headset"></i> Soporte 24/7</h2>
+                </div>
+                <div class="ventaja">
+                    <h2 class="ventaja__titulo"> <i class="fas fa-tags"></i> Ofertas disponibles</h2>
+                </div>
+                <div class="ventaja">
+                    <h2 class="ventaja__titulo"> <i class="fas fa-truck"></i> Envíos rápidos</h2>
+                </div>
+            </div>
+
+            <div class="productostabs">
+                <div class="tabs__contenedorbtns">
+                    <button class="tab-btn active" data-id="history">Más Vendidos</button>
+                    <button class="tab-btn" data-id="vision">Recientes</button>
+                    <button class="tab-btn" data-id="goals">Populares</button>
+                </div>
+                <div class="productostabs__contenido">
+                    <div class="productostabs__bloque active" id="history">
+                    <h4 class="productostabs__subtitulo">Más Vendidos</h4>
+                    <div class="productostabs__grid">
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/playera1.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Playera Rock N' Roll</h4>
+                                <p class="productotabs__precio">$499.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/playera7.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Playera Monumento Estampada</h4>
+                                <p class="productotabs__precio">$419.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/hoodie4.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Hoodie Gris/Negra Manga</h4>
+                                <p class="productotabs__precio">$799.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/top2.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Hoodie Multicolor Combinada</h4>
+                                <p class="productotabs__precio">$999.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="productostabs__bloque" id="vision">
+                    <h4 class="productostabs__subtitulo">Recientes</h4>
+                    <div class="productostabs__grid">
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/playera5.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Camisa Mosaico Azul</h4>
+                                <p class="productotabs__precio">$699.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/top4.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Hoodie Combinada Rosa</h4>
+                                <p class="productotabs__precio">$799.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/accesorio3.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Mochila Vennoir Negra</h4>
+                                <p class="productotabs__precio">$699.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/playera2.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Playera Estampado Perro</h4>
+                                <p class="productotabs__precio">$399.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="productostabs__bloque" id="goals">
+                    <h4 class="productostabs__subtitulo">Populares</h4>
+                    <div class="productostabs__grid">
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/top3.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Hoodie Combinada Gris/Negro</h4>
+                                <p class="productotabs__precio">$799.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/accesorio6.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Llavero oficial Vennoir</h4>
+                                <p class="productotabs__precio">$199.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/top1.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Hoodie Combinada Gris/Blanco</h4>
+                                <p class="productotabs__precio">$899.00</p>
+                            </div>
+                        </div>
+
+                        <div class="productotabs">
+                            <div class="productotabs__imagen">
+                                <img src="img/playera3.png" alt="Producto" class="productotabs__img">
+                            </div>
+                            <div class="productotabs__info">
+                                <h4 class="productotabs__nombre">Playera Monumento Oscuro </h4>
+                                <p class="productotabs__precio">$399.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ofertas">
+                <h2 class="ofertas__titulo">Las Mejores Ofertas</h2>
+                <p class="ofertas__descripcion">Aprovecha las mejores ofertas en la tienda en línea</p>
+                <a href="#" class="ofertas__boton">Ver Ofertas</a>
+                <div class="ofertas__color ofertas__color--1"></div>
+                <div class="ofertas__color ofertas__color--2"></div>
+                <div class="ofertas__color ofertas__color--3"></div>
+            </div>
+
+            <div class="trends">
+                <div class="trend">
+                    <div class="trend__contenido">
+                        <h2 class="trend__titulo">Producto Recomendado</h2>
+                        <h3 class="trend__subtitulo">Mochila Vennoir Negra</h3>
+                        <a href="#" class="trend__enlace">Pide Ahora</a>
+                        <div class="trend__color"></div>
+                    </div>
+                    <div class="trend__imagen">
+                        <img src="img/accesorio3.png" alt="Trend" class="trend__img">
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <div class="trend__contenido">
+                        <h2 class="trend__titulo">Producto Recomendado</h2>
+                        <h3 class="trend__subtitulo">Llavero oficial Vennoir</h3>
+                        <a href="#" class="trend__enlace">Pide Ahora</a>
+                        <div class="trend__color"></div>
+                    </div>
+                    <div class="trend__imagen">
+                        <img src="img/accesorio6.png" alt="Trend" class="trend__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__seccion">
+                <h3 class="footer__titulo">Sucursales</h3>
+                <ul class="footer__sucursales">
+                    <li class="footer__vineta">
+                        <i class="fas fa-map-pin"></i>
+                        <h4 class="footer__sucursal">CDMX</h4>
+                    </li>
+                    <li class="footer__vineta">
+                        <i class="fas fa-map-pin"></i>
+                        <h4 class="footer__sucursal">Monterrey</h4>
+                    </li>
+                    <li class="footer__vineta">
+                        <i class="fas fa-map-pin"></i>
+                        <h4 class="footer__sucursal">Guadalajara</h4>
+                    </li>
+                    <li class="footer__vineta">
+                        <i class="fas fa-map-pin"></i>
+                        <h4 class="footer__sucursal">Querétaro</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__seccion">
+                <h3 class="footer__titulo">Horarios</h3>
+                <ul class="footer__horarios">
+                    <li class="footer__dia"><span class="footer__dia--bold">Lunes - Viernes: </span>10:00 / 21:00</li>
+                    <li class="footer__dia"><span class="footer__dia--bold">Sábado: </span>12:00 / 19:00</li>
+                    <li class="footer__dia"><span class="footer__dia--bold">Domingo: </span>12:00 / 17:00</li>
+                </ul>
+            </div>
+
+            <div class="footer__seccion">
+                <h3 class="footer__titulo">Navegación</h3>
+                <div class="footer__navgrid">
+                    <a href="#" class="footer__navegacion">Inicio</a>
+                    <a href="#" class="footer__navegacion">Tienda</a>
+                    <a href="#" class="footer__navegacion">Ofertas</a>
+                    <a href="#" class="footer__navegacion">Tendencias</a>
+                    <a href="#" class="footer__navegacion">Sucursales</a>
+                    <a href="#" class="footer__navegacion">Contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copyright">Vennoir ©. Todos los derechos reservados 2022. Sitio realizado por Alex Oliva.</p>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/5bb4703aed.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+    <script>
+        $(function () {
+            let container = $('#pagination');
+            container.activeClassName = 'populares__pagination';
+            container.pagination({
+                dataSource: [
+                    {number: "Hoodie Combinada Gris/Blanco", img: 'img/top1.png'},
+                    {number: "Hoodie Multicolor Combinada", img: 'img/top2.png'},
+                    {number: "Hoodie Combinada Gris/Negro", img: 'img/top3.png'},
+                    {number: "Hoodie Combinada Rosa", img: 'img/top4.png'},
+                ],
+                pageSize: 1,
+                callback: function (data, pagination) {
+                    var dataHtml = '<ul class="populares__lista">';
+    
+                    $.each(data, function (index, item) {
+                        dataHtml += '<li class="populares__vineta">' + item.number + '<img class="populares__img" src="' + item.img + '">' + '</li>';
+                    });
+    
+                    dataHtml += '</ul>';
+    
+                    $("#container").html(dataHtml);
+                }
+            })
+        })
+    </script>
+</body>
+</html>
